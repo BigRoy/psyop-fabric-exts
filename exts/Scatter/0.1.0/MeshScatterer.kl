@@ -248,7 +248,7 @@ function DartSizer MeshScatterer.getDartSizer!(in DartSizer sizer, Scalar defaul
 */
 /// \internal
 inline MeshScatterer.resetCandidateFilter!() {
-  this.dartCandidatesRemove.resize(this.dartCandidates.size);
+  this.dartCandidatesRemove.resize(this.dartCandidates.size());
   for ( UInt32 i=0; i<this.dartCandidatesRemove.size(); i++) {
     this.dartCandidatesRemove[i] = false;
   }

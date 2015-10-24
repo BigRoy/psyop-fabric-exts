@@ -1,7 +1,7 @@
 
 /// \internal
 inline makeCumulativeArray(in Scalar array[], io Scalar cumulativeArrayOut[]) {
-  UInt32 array_size = array.size;
+  UInt32 array_size = array.size();
   if (array_size == 0)
     return;
   cumulativeArrayOut.resize(array_size);
